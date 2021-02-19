@@ -10,8 +10,4 @@ export function useEffect(props) {
 
 export class FunctionalComponent extends Component {
   // YOUR CODE GOES HERE
-
-  constructor(props) {
-    super(props);
-  }
 }
