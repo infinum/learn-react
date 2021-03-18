@@ -4,7 +4,7 @@ test("The function is defined", () => {
   // YOUR TEST GOES HERE
 });
 
-test("The function returns an object containing type and props", () => {
+test("The function returns an object containing element's type and its props", () => {
   // YOUR TEST GOES HERE
 });
 
@@ -20,7 +20,7 @@ test("The function adds multiple children to the created element", () => {
   // YOUR TEST GOES HERE
 });
 
-test("The function add text in the element", () => {
+test("The function adds text in the element", () => {
   // YOUR TEST GOES HERE
 });
 

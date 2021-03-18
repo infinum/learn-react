@@ -26,6 +26,8 @@ npm run test 00
 
 React is a front-end library. So where better to start than creating elements and rendering them! For this first task, you have to create two functions - _createElement_ and _render_, that will be used in the tests. Don't forget to check out the details you need to keep in mind - there are several important parts to an element. Take some time and go through the tests and figure out what we require from these two functions.
 
+You need to pass three arguments to the _createElement_ function - type, props, and any children the element might have. This function then returns an object.
+
 Hint: Start with the first test on _createElement_ and see what you need to do, to actually use the functions you'll make.
 
 ## 2. Events
@@ -34,13 +36,13 @@ Events are actions that represent a core aspect of communication between the use
 
 One of the basic actions the user can make, is to click on an element. In this task we want you to enable us to listen for this event on our rendered elements.
 
-Continue developing you _render_ function to complete this task.
+Continue developing you _render_ function to complete this task. In the tests we want to test two different events - click and blur, but your solution needs to handle any event.
 
 ## 3. State
 
-Elements are important, but in React and on the web today, components are the true building blocks. Not only that they contain the UI elements, needed to construct more complex features, they can also handle internal state, which is an intecral part of React.
+Elements are important, but in React and on the web today, components are the true building blocks. Not only that they contain the UI elements, needed to construct more complex features, they can also handle internal state, which is an integral part of React.
 
-In this task, expand the class component in the _Component.ts_ file and expand your solution for the _render_ function.
+In this task, expand the class component in the _Component.ts_ file and expand your solution for the _render_ function. _Component.ts_ needs to store props and the state and should handle proper changing of this state.
 
 ## 4. Virtual DOM
 
@@ -48,9 +50,15 @@ Next big thing, important for React is it's virtual DOM. It's representation of 
 
 For this task, we need to delve a bit deeper into React and reimagine our already build functions _createElement_ and _render_. The most important part will be to create the _diff_ function that will compare old states and the new. We set up some helper functions that you need to expand and use in the main _diff_ function, so you know what to keep in mind. Then expand _renderComponent_ and _createVirtualElement_ and use them to enhance your existing functions.
 
+_virtualElement_ is a copy of the rendered element that we use in the virtualDom. This is why the parent or domContainer is also important here, since the compomnent for which we will compare differences in our _diff_ function is already rendered and has a parent. The _diff_ function needs to know about this parentDom, so we know exactly where to render the new component.
+
+The newly created _diff_ function will be used in the _renderComponent_ and our old _render_.
+
 ## 5. Hooks
 
 For this task we want you to delve deeper into hooks. For the scope of the task, we will focus on useState and useEffect hooks. In the _hooks.ts_ file you'll also find the beginning of Functional component that you need to implement.
+
+[Hooks at a glance](https://reactjs.org/docs/hooks-overview.html)
 
 # On project structure and tests
 
@@ -97,6 +105,8 @@ const element = React.createElement('div', null, 'React is cool!');
 ```
 
 For your first task you'll be creating exactly this createElement function. You don't need to worry about configuring Babel or wiring your function to be used with the tests. We are handling that, you just focus on the code.
+
+[React without JSX](https://reactjs.org/docs/react-without-jsx.html)
 
 # License
 

@@ -1,3 +1,3 @@
-export function render(props) {
+export function render(element, container) {
   // YOUR CODE GOES HERE
 }

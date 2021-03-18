@@ -1,3 +1,3 @@
-export function createVirtualElement(props) {
+export function createVirtualElement(type, props, key) {
   // YOUR CODE GOES HERE
 }

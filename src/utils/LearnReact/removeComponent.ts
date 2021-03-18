@@ -1,1 +1,1 @@
-export function removeVirtualElement(props) {}
+export function removeVirtualElement(parent, virtualElement) {}

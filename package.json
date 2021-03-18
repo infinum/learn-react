@@ -1,6 +1,6 @@
 {
-  "name": "learn-react",
-  "version": "0.0.1",
+  "name": "learn-react-testing",
+  "version": "0.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/infinum/learn-react.git"
+    "url": "git+https://github.com/infinum/learn-react-testing.git"
   },
   "keywords": [
     "react"
@@ -16,9 +16,9 @@
   "author": "Infinum",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/infinum/learn-react/issues"
+    "url": "https://github.com/infinum/learn-react-testing/issues"
   },
-  "homepage": "https://github.com/infinum/learn-react#readme",
+  "homepage": "https://github.com/infinum/learn-react-testing#readme",
   "devDependencies": {
     "@babel/cli": "^7.12.0",
     "@babel/core": "^7.12.0",

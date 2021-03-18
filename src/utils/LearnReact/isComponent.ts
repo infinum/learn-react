@@ -1,1 +1,1 @@
-export function isComponent(props) {}
+export function isComponent(virtualElement) {}
