@@ -3,7 +3,7 @@
   "compilerOptions": {
     "target": "es5",
     "jsx": "react",
-    "allowSyntheticDefaultImports": true,
-    "jsxFactory": "LearnReact.createElement"
+    "jsxFactory": "LearnReact.createElement",
+    "allowSyntheticDefaultImports": true
   }
 }
