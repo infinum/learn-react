@@ -1,10 +1,10 @@
 import { Component } from "./Component";
 
-export function useState(props) {
+export function useState(initialState) {
   // YOUR CODE GOES HERE
 }
 
-export function useEffect(props) {
+export function useEffect(effect, dependencies) {
   // YOUR CODE GOES HERE
 }
 

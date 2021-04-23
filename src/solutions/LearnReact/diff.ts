@@ -1,11 +1,16 @@
-export function diff(props) {
+export function diff(parentDom, newVirtualElement, oldVirtualElement) {
   // YOUR CODE GOES HERE
 }
 
-function diffProps(props) {
+function diffProps(dom, newProps, oldProps) {
   // YOUR CODE GOES HERE
 }
 
-function diffChildren(props) {
+function diffChildren(
+  parentDom,
+  renderResults,
+  newParentVirtualDom,
+  oldParentVirtualDom
+) {
   // YOUR CODE GOES HERE
 }

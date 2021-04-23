@@ -9,3 +9,7 @@ beforeEach(() => {
 test("When the button is clicked, the function assigned to an onClick event is triggered", () => {
   // YOUR TEST GOES HERE
 });
+
+test("When the button is clicked, the function assigned to an onBlur event is triggered", () => {
+  // YOUR TEST GOES HERE
+});
