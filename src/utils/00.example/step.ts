@@ -1,9 +1,9 @@
 const preComputed = [1, 1];
 
-export function step(num) {
-  if (preComputed[num]) {
-    return preComputed[num];
+export function step(n) {
+  if (preComputed[n]) {
+    return preComputed[n];
   } else {
-    return step(num - 1) + step(num - 2);
+    return step(n - 1) + step(n - 2);
   }
 }
