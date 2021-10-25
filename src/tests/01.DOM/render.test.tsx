@@ -17,3 +17,7 @@ test("The function renders the element as a child of the container", () => {
 test("The function handles multiple children that can be nested", () => {
   // YOUR TEST GOES HERE
 });
+
+test("The function renders nothing if the element is null.", () => {
+  // YOUR TEST GOES HERE
+});
