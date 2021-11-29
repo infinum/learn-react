@@ -130,7 +130,7 @@ For the purposes of this exercise adding, removing, or reordering of the childre
 - Solution: `src/solutions/LearnReact/diff.test.tsx`
 - Specification and tests: `src/tests/04.virtualDOM/diff.test.tsx`
 
-References:
+#### References:
 
 - [Virtual DOM](https://reactjs.org/docs/faq-internals.html)
 - [Reconciliation](https://reactjs.org/docs/reconciliation.html)
