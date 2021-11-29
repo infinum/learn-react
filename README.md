@@ -119,7 +119,7 @@ Implementation tips:
 1. **diff** function should called initialy from the **render** function. Old virtual element should be set to `null`.
 2. **diff** function should be each time component state is changed. For this to work component should have a virtual element saved. New virtual element is just a clone of the saved virutal element.
 3. Virtual element of the component should save the component instance. This way the component state can be reused.
-4. First step of the diff algorithm is to compare types. If they differ old element should be removed from the DOM.
+4. The first step of the diff algorithm is to compare types. If they differ old element should be removed from the DOM.
 5. Second step is to compare the props. This is done only for the non-component virutal elements. Old listensers and styles should be removed if not present in the new props.
 6. The last step is to compare rendered children. The virtual element should save rendered children so they can be compared on change. They are compared by calling the **diff** function.
 
