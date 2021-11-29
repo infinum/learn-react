@@ -91,7 +91,7 @@ Continue developing your **render** function to complete this task. In the tests
 
 ## 3. Component and State
 
-Elements are important, but in React and on the web today, components are the true building blocks. They contain the UI elements needed to construct more complex features. They can also handle internal state, which is an integral part of React.
+Elements are important, but in React and on the web today, components are the true building blocks. They contain the UI elements needed to construct more complex features. They can also handle the internal state, which is an integral part of React.
 
 In this task, expand the class component in the **Component.ts** file and expand your solution for the **render** function. **Component.ts** needs to store props and the state and should handle proper changing of this state.
 
