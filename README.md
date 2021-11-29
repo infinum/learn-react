@@ -104,7 +104,7 @@ In this task, expand the class component in the **Component.ts** file and expand
 
 - Specification and tests: `src/tests/03.state/setState.test.tsx`
 
-References:
+#### References:
 
 - [JavaScript Classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
 - [React.Component](https://reactjs.org/docs/react-component.html)
