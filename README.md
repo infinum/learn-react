@@ -112,7 +112,7 @@ In this task, expand the class component in the **Component.ts** file and expand
 
 ## 4. Diff algorithm
 
-Next big thing, important for React is it's virtual DOM. It's representation of the real DOM, before any changes are made on the page. It happens between the render and actually displaying of the component on the page. React uses it's virtual DOM for comparing the initial state of the components to any changes that were made on the page. This way, we have more optimised and selective rerendering of the DOM, because we change only the components that have to, instead of the entire page.
+The next big thing, important for React is its virtual DOM. It's a representation of the real DOM before any changes are made on the page. It happens between the render and actually display of the component on the page. React uses its virtual DOM for comparing the initial state of the components to any changes that were made on the page. This way, we have more optimized and selective rerendering of the DOM, because we change only the components that have to, instead of the entire page.
 
 Implementation tips:
 
