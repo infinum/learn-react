@@ -27,7 +27,7 @@ If possible, you should have one or more mentors, but that is not mandatory.
 
 ## 0. Example
 
-. We prepared [Fibonacci number](https://en.wikipedia.org/wiki/Fibonacci_number) example. It will help you to adapt to the code and have some template upon which you can build upon. Take a few minutes and check it out.
+. We prepared [Fibonacci number](https://en.wikipedia.org/wiki/Fibonacci_number) example. It will help you to adapt to the code and have a template with which you can build upon. Take a few minutes and check it out.
 You'll notice that we import another custom function there! You can find _step_ function, used in this example in `src/utils` directory.
 
 - Solution: `src/solutions/example/fibonacci.ts`
