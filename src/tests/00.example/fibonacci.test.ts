@@ -1,6 +1,6 @@
 import { fibonnaci } from '../../solutions/example/fibonacci';
 
-test('computes fibonacci value for smaller numbers ', () => {
+test("computes fibonacci value for smaller numbers ", () => {
   expect(fibonnaci(0)).toBe(1);
   expect(fibonnaci(1)).toBe(1);
 });
