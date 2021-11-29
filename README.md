@@ -22,7 +22,7 @@ If possible, you should have one or more mentors, but that is not mandatory.
 
 ### Rules
 
-- Test every subtask should with Jest
+- Test every subtask with Jest
 - Complete every subtask in order. Don't skip ahead, as tasks build upon one another
 
 ## 0. Example
