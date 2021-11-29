@@ -1,34 +1,77 @@
-# LearnReact
+# Learn React
 
 For greater good.
 _The greater good._
 
-To delve deeper into the inner workings of React, your assignment will be to create your own basic implementation of the main building blocks that make this library work.
-The tasks that you will tackle will build upon one another, so it's necessary to start at the beginning and build your brand new library shelf by shelf. To ensure that your work will be standing on firm footing, all tests for a given task should be passing, before moving on.
+To delve deeper into the inner workings of React. Your assignment is to create your own implementation of the React library. This will help you to delve deeper into the inner workings of it.
 
-If possible, you should have one or more mentors, but that is not mandatory. But by having another developer provide his or her feedback will offer you a fresh perspective and help you on the way.
+The tasks that you will tackle will build upon one another. It's necessary to start at the beginning and build your brand new library shelf by shelf. To ensure that your work will be standing on firm footing all tests for a given task should be passing.
 
-[Under the task instructions](#user-content-on-project-structure-and-tests) we prepared more information that might interest you about running tests, project structure and a few hekpful references.
+If possible, you should have one or more mentors, but that is not mandatory.
+
+### Requirements
+
+- Basic knowledge of JavaScript
+- Text editor (we recommend [Visual Studio Code](https://code.visualstudio.com/))
+- Knowledge of [git](https://git-scm.com/)
+
+### Recommended
+
+- A mentor to guide you when you're lost
+- knowledge of Jest
+
+### Rules
+
+- Test every subtask should with Jest
+- Complete every subtask in order. Don't skip ahead, as tasks build upon one another
 
 ## 0. Example
 
-For you to adapt to the code and have some template upon which you can build upon, we prepared our Fibonacci function example. Take a few minutes and check it out.
+. We prepared [Fibonacci number](https://en.wikipedia.org/wiki/Fibonacci_number) example. It will help you to adapt to the code and have some template upon which you can build upon. Take a few minutes and check it out.
+You'll notice that we import another custom function there! You can find _step_ function, used in this example in `src/utils` directory.
 
-The implementation of the Fibonacci function is in the `src/solutions` directory. You'll notice that we import another custom function there! You can find _step_ function, used in this example in `src/utils` directory. During the development you'll find some hints on smaller function that you could implement. This will help you with some advanced tasks.
+- Solution: `src/solutions/example/fibonacci.ts`
+- Specification and tests: `src/tests/00.example/fibonacci.test.ts`
 
-Here you can see how passing tests look like. Hopefully. Try running this command in the terminal:
+Run tests from the command line:
 
+```bash
+npm run tests fibonacci
 ```
-npm run test 00
+
+or
+
+```bash
+npm run tests 00
 ```
+
+#### References:
+
+- [Fibonacci number](https://en.wikipedia.org/wiki/Fibonacci_number)
+- [Recursion](https://developer.mozilla.org/en-US/docs/Glossary/Recursion)
 
 ## 1. DOM
 
-React is a front-end library. So where better to start than creating elements and rendering them! For this first task, you have to create two functions - _createElement_ and _render_, that will be used in the tests. Don't forget to check out the details you need to keep in mind - there are several important parts to an element. Take some time and go through the tests and figure out what we require from these two functions.
+React is a front-end library. So where better to start than creating elements and rendering them! For this first task, you have to create two functions - **createElement** and **render**, that will be used in the tests.
 
-You need to pass three arguments to the _createElement_ function - type, props, and any children the element might have. This function then returns an object.
+Take some time and go through the tests and figure out what we require from these two functions.
 
-Hint: Start with the first test on _createElement_ and see what you need to do, to actually use the functions you'll make.
+### createElement
+
+- Solution: `src/solutions/LearnReact/createElement.ts`
+- Specification and tests: `src/tests/01.DOM/createElement.test.tsx`
+
+### render
+
+- Solution: `src/solutions/LearnReact/render.ts`
+- Specification and tests: `src/tests/01.DOM/render.test.tsx`
+
+#### References:
+
+- [Introducing JSX](https://reactjs.org/docs/introducing-jsx.html)
+- [Rendering Elements](https://reactjs.org/docs/rendering-elements.html)
+- [Document.createElement()](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement)
+- [Document.createTextNode()](https://developer.mozilla.org/en-US/docs/Web/API/Document/createTextNode)
 
 ## 2. Events
 
@@ -36,45 +79,82 @@ Events are actions that represent a core aspect of communication between the use
 
 One of the basic actions the user can make, is to click on an element. In this task we want you to enable us to listen for this event on our rendered elements.
 
-Continue developing you _render_ function to complete this task. In the tests we want to test two different events - click and blur, but your solution needs to handle any event.
+Continue developing you **render** function to complete this task. In the tests we want to test two different events - click and blur, but your solution needs to handle any event.
 
-## 3. State
+### events
 
-Elements are important, but in React and on the web today, components are the true building blocks. Not only that they contain the UI elements, needed to construct more complex features, they can also handle internal state, which is an integral part of React.
+- Specification and tests: `src/tests/02.events/events.test.tsx`
 
-In this task, expand the class component in the _Component.ts_ file and expand your solution for the _render_ function. _Component.ts_ needs to store props and the state and should handle proper changing of this state.
+#### References:
 
-## 4. Virtual DOM
+- [EventTarget.addEventListener()](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
 
-Next big thing, important for React is it's virtual DOM. It's representation of the real DOM, before any changes are made on the page. It happens between the render and actually displaying of the component on the page. React uses it's virtual DOM for comparing the initial state of the components to any changes that are made on the page. This way, we have more optimised and selective rerendering of the DOM, because we change only the components that have to, instead of the entire page.
+## 3. Component and State
 
-For this task, we need to delve a bit deeper into React and reimagine our already build functions _createElement_ and _render_. The most important part will be to create the _diff_ function that will compare old states and the new. We set up some helper functions that you need to expand and use in the main _diff_ function, so you know what to keep in mind. Then expand _renderComponent_ and _createVirtualElement_ and use them to enhance your existing functions.
+Elements are important, but in React and on the web today, components are the true building blocks. They contain the UI elements needed to construct more complex features. They can also handle internal state, which is an integral part of React.
 
-_virtualElement_ is a copy of the rendered element that we use in the virtualDom. This is why the parent or domContainer is also important here, since the compomnent for which we will compare differences in our _diff_ function is already rendered and has a parent. The _diff_ function needs to know about this parentDom, so we know exactly where to render the new component.
+In this task, expand the class component in the **Component.ts** file and expand your solution for the **render** function. **Component.ts** needs to store props and the state and should handle proper changing of this state.
 
-The newly created _diff_ function will be used in the _renderComponent_ and our old _render_.
+### Component
+
+- Solution: `src/solutions/LearnReact/Component.ts`
+- Specification and tests: `src/tests/03.state/component.test.tsx`
+
+### setState
+
+- Specification and tests: `src/tests/03.state/setState.test.tsx`
+
+References:
+
+- [JavaScript Classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
+- [React.Component](https://reactjs.org/docs/react-component.html)
+- [setState](https://reactjs.org/docs/react-component.html#setstate)
+
+## 4. Diff algorithm
+
+Next big thing, important for React is it's virtual DOM. It's representation of the real DOM, before any changes are made on the page. It happens between the render and actually displaying of the component on the page. React uses it's virtual DOM for comparing the initial state of the components to any changes that were made on the page. This way, we have more optimised and selective rerendering of the DOM, because we change only the components that have to, instead of the entire page.
+
+Implementation tips:
+
+1. **diff** function should called initialy from the **render** function. Old virtual element should be set to `null`.
+2. **diff** function should be each time component state is changed. For this to work component should have a virtual element saved. New virtual element is just a clone of the saved virutal element.
+3. Virtual element of the component should save the component instance. This way the component state can be reused.
+4. First step of the diff algorithm is to compare types. If they differ old element should be removed from the DOM.
+5. Second step is to compare the props. This is done only for the non-component virutal elements. Old listensers and styles should be removed if not present in the new props.
+6. Last step is to compare rendered children. Virtual element should save rendered children so they can be compared on change. They are compared by calling the **diff** function.
+
+For the purposes of this exercise adding, removing or reordering of the children is not mandatory.
+
+### diff
+
+- Solution: `src/solutions/LearnReact/diff.test.tsx`
+- Specification and tests: `src/tests/04.virtualDOM/diff.test.tsx`
+
+References:
+
+- [Virtual DOM](https://reactjs.org/docs/faq-internals.html)
+- [Reconciliation](https://reactjs.org/docs/reconciliation.html)
 
 ## 5. Hooks
 
-For this task we want you to delve deeper into hooks. For the scope of the task, we will focus on useState and useEffect hooks. In the _hooks.ts_ file you'll also find the beginning of Functional component that you need to implement.
+For this task we want you to delve deeper into hooks. For the scope of the task, we will focus on useState and useEffect hooks. You'll also need to implement Functional component.
 
-[Hooks at a glance](https://reactjs.org/docs/hooks-overview.html)
+### Functional component
 
-# On project structure and tests
+- Solution: `src/solutions/LearnReact/hooks.tsx`
+- Specification and tests: `src/tests/05.hooks/functionalComponent.test.tsx`
 
-Helpful resources:
+### useState & useEffect
 
-- [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-- [React documentation](https://reactjs.org/)
-- [DevDocs React](https://devdocs.io/react/)
-- [javascript.info](https://javascript.info/)
+- Solution: `src/solutions/LearnReact/hooks.ts`
+- Specification and tests: `src/tests/05.hooks/hooks.test.tsx`
 
-Once you download the project repository, take a look around. In the `src` folder, you'll find a few subfolders. One of them is `tests`. Inside you'll find bundled tests for each of the tasks. They will help you to understand what you need to cover in the task and then check if your implementation is working correctly.
+References:
 
-We're using [jest testing framework](https://jestjs.io/en/) on this project. If you are not yet familiar with testing, check out these resources to help you get oriented:
+- [Closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
+- [Introducing Hooks](https://reactjs.org/docs/hooks-intro.html)
 
-- [Basics of Testing JavaScript with Jest](https://blog.bitsrc.io/testing-javascript-with-jest-a4b82817bb0f)
-- [Using matchers in tests](https://jestjs.io/docs/en/using-matchers#common-matchers)
+## FAQ
 
 ### How to run tests?
 
@@ -82,17 +162,17 @@ We're using [jest testing framework](https://jestjs.io/en/) on this project. If 
 npm run test
 ```
 
-This will run all the tests on the project. Very useful, when you'll be done with all the tasks, to see all the checkmarks. But during development you'll want to run only the tests tied to your current work. To do that type
+This will run all the tests on the project. Very useful, when you're done with all the tasks, to see all the checkmarks. But during development you'll want to run only the tests tied to your current work. To do that type
 
 ```
 npm run test 01
 ```
 
-This command will run only the tests in the folder `01.DOM`, so you won't be distracted by failed tests from the tasks you haven't started yet!
+This command will run only the tests in the folder `01.DOM`. This way you are not distracted by failed tests from the tasks you haven't started yet!
 
 ### JSX, Babel and what happens there
 
-When you'll take a look at the tests, you'll notice that we often use HTML-like code, mixed together with JavaScript. This is JSX (JavaScript XML), which allows us to easily construct elements and place them in the DOM. We then use [Babel](https://babeljs.io/docs/en/), which is a JavaScript compiler, that takes care of turning JSX code into plain JavaScript.
+You may have noticed that we often use HTML-like code, mixed together with JavaScript. This is JSX (JavaScript XML), which allows us to construct elements and place them in the DOM. [Babel](https://babeljs.io/docs/en/) turns JSX code into plain JavaScript.
 
 ```
 const element = <div>React is cool!</div>
@@ -104,15 +184,15 @@ This is then transformed into standard JavaScript object
 const element = React.createElement('div', null, 'React is cool!');
 ```
 
-For your first task you'll be creating exactly this createElement function. You don't need to worry about configuring Babel or wiring your function to be used with the tests. We are handling that, you just focus on the code.
+For your first task you'll be creating exactly this createElement function. You don't need to worry about configuring Babel, we are handling that, you can focus on the code.
 
 [React without JSX](https://reactjs.org/docs/react-without-jsx.html)
 
-# License
+## License
 
-LearnReact is released under the [MIT license](http://www.opensource.org/licenses/MIT).
+Released under the [MIT license](http://www.opensource.org/licenses/MIT).
 
-# Credits
+## Credits
 
 Maintained and sponsored by
 [Infinum](http://www.infinum.com).
