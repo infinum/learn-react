@@ -3,7 +3,7 @@
 For greater good.
 _The greater good._
 
-To delve deeper into the inner workings of React. Your assignment is to create your own implementation of the React library. This will help you to delve deeper into the inner workings of it.
+Your assignment is to create your own implementation of the React library. This will help you to delve deeper into the inner workings of it.
 
 The tasks that you will tackle will build upon one another. It's necessary to start at the beginning and build your brand new library shelf by shelf. To ensure that your work will be standing on firm footing all tests for a given task should be passing.
 
