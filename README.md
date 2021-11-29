@@ -45,7 +45,7 @@ or
 npm run tests 00
 ```
 
-#### References:
+References:
 
 - [Fibonacci number](https://en.wikipedia.org/wiki/Fibonacci_number)
 - [Recursion](https://developer.mozilla.org/en-US/docs/Glossary/Recursion)
@@ -66,7 +66,7 @@ Take some time and go through the tests and figure out what we require from thes
 - Solution: `src/solutions/LearnReact/render.ts`
 - Specification and tests: `src/tests/01.DOM/render.test.tsx`
 
-#### References:
+References:
 
 - [Introducing JSX](https://reactjs.org/docs/introducing-jsx.html)
 - [Rendering Elements](https://reactjs.org/docs/rendering-elements.html)
@@ -85,7 +85,7 @@ Continue developing your **render** function to complete this task. In the tests
 
 - Specification and tests: `src/tests/02.events/events.test.tsx`
 
-#### References:
+References:
 
 - [EventTarget.addEventListener()](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
 
@@ -104,7 +104,7 @@ In this task, expand the class component in the **Component.ts** file and expand
 
 - Specification and tests: `src/tests/03.state/setState.test.tsx`
 
-#### References:
+References:
 
 - [JavaScript Classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
 - [React.Component](https://reactjs.org/docs/react-component.html)
@@ -130,7 +130,7 @@ For the purposes of this exercise adding, removing, or reordering of the childre
 - Solution: `src/solutions/LearnReact/diff.test.tsx`
 - Specification and tests: `src/tests/04.virtualDOM/diff.test.tsx`
 
-#### References:
+References:
 
 - [Virtual DOM](https://reactjs.org/docs/faq-internals.html)
 - [Reconciliation](https://reactjs.org/docs/reconciliation.html)
@@ -149,7 +149,7 @@ For this task we want you to delve deeper into hooks. For the scope of the task,
 - Solution: `src/solutions/LearnReact/hooks.ts`
 - Specification and tests: `src/tests/05.hooks/hooks.test.tsx`
 
-#### References:
+References:
 
 - [Closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
 - [Introducing Hooks](https://reactjs.org/docs/hooks-intro.html)
