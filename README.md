@@ -149,7 +149,7 @@ For this task we want you to delve deeper into hooks. For the scope of the task,
 - Solution: `src/solutions/LearnReact/hooks.ts`
 - Specification and tests: `src/tests/05.hooks/hooks.test.tsx`
 
-References:
+#### References:
 
 - [Closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
 - [Introducing Hooks](https://reactjs.org/docs/hooks-intro.html)
