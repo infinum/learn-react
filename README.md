@@ -79,7 +79,7 @@ Events are actions that represent a core aspect of communication between the use
 
 One of the basic actions the user can make, is to click on an element. In this task we want you to enable us to listen for this event on our rendered elements.
 
-Continue developing you **render** function to complete this task. In the tests we want to test two different events - click and blur, but your solution needs to handle any event.
+Continue developing your **render** function to complete this task. In the tests, we want to test two different events - click and blur, but your solution needs to handle any event.
 
 ### events
 
