@@ -121,7 +121,7 @@ Implementation tips:
 3. Virtual element of the component should save the component instance. This way the component state can be reused.
 4. First step of the diff algorithm is to compare types. If they differ old element should be removed from the DOM.
 5. Second step is to compare the props. This is done only for the non-component virutal elements. Old listensers and styles should be removed if not present in the new props.
-6. Last step is to compare rendered children. Virtual element should save rendered children so they can be compared on change. They are compared by calling the **diff** function.
+6. The last step is to compare rendered children. The virtual element should save rendered children so they can be compared on change. They are compared by calling the **diff** function.
 
 For the purposes of this exercise adding, removing, or reordering of the children is not mandatory.
 
