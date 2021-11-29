@@ -123,7 +123,7 @@ Implementation tips:
 5. Second step is to compare the props. This is done only for the non-component virutal elements. Old listensers and styles should be removed if not present in the new props.
 6. Last step is to compare rendered children. Virtual element should save rendered children so they can be compared on change. They are compared by calling the **diff** function.
 
-For the purposes of this exercise adding, removing or reordering of the children is not mandatory.
+For the purposes of this exercise adding, removing, or reordering of the children is not mandatory.
 
 ### diff
 
