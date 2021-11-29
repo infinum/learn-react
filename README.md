@@ -162,7 +162,7 @@ References:
 npm run test
 ```
 
-This will run all the tests on the project. Very useful, when you're done with all the tasks, to see all the checkmarks. But during development you'll want to run only the tests tied to your current work. To do that type
+This will run all the tests on the project. Very useful, when you're done with all the tasks, to see all the checkmarks. But during development, you'll want to run only the tests tied to your current work. To do that type
 
 ```
 npm run test 01
