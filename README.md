@@ -156,6 +156,22 @@ References:
 
 ## FAQ
 
+### How to setup the project?
+
+```
+npm run i
+```
+
+Make sure you have `npm` version 7 installed.
+
+### How to see changes?
+
+```
+npm run playground
+```
+
+You can render elements and components from the `src/index.tsx` file.
+
 ### How to run tests?
 
 ```
